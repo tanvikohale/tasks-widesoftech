@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        .container{
+            background-color: aqua;
+            width: 200px;
+            height: 200px;
+            margin: 3rem auto;
+            justify-content: center;
+            align-items: center;
+            outline: 1px solid black;
+        }
+        input::placeholder{
+            font-size: larger;
+            font-weight: 700;
+            text-align: center;
+            font-style: italic;
+            color: red;
+            background-color: yellow;
+            border: 1px solid black;
+        }
+        input:focus::placeholder{
+            background-color: blue;
+        }
+        .container:hover{
+            background-color: white;
+        }
+    </style>
+
+</head>
+<body>
+    <div class="container">
+        <input type="text" placeholder="Enter Your name">
+    </div>
+</body>
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+      *{
+        margin: 0;padding: 0;
+      }
+      .parent{
+        width: 500px;
+        height: 400px;
+        background-color: white;
+        border: 0.025rem solid black;
+        margin: 5rem auto;
+        padding: 2px;
+        row-gap: .25rem;
+        column-gap: .25rem;
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+      }
+      .header{
+        background-color: aqua;
+        grid-row-start: 1;
+        grid-row-end: 1;
+        grid-column-start: 1;
+        grid-column-end: 6;
+      }
+      
+      .main-content{
+        background-color: aqua;
+        grid-row-start: 2;
+        grid-row-end: 3;
+        grid-column-start: 2;
+        grid-column-end: 4;
+      }
+
+      .sidebar{
+        background-color: purple;
+        grid-row-start: 2;grid-row-end: 3;
+        grid-column: 4/4;
+      }
+      
+      .twin{
+        background-color: blue;
+        grid-row-start: 3;
+        grid-row-end: 4;
+        grid-column-start: 2;
+        grid-column-end: 3;
+      }
+      .twin1{
+        background-color: rgb(236, 163, 27);
+        grid-row-start: 3;
+        grid-column: 3/5;
+
+      }
+      .footer{
+        background-color: plum;
+        grid-row-start: 4;
+        grid-row-end: 5;
+        grid-column: 1/6;
+      }
+     
+    </style>
+</head>
+<body>
+    <div class="parent">
+    <div class="header">header</div>
+   <div class="main-content">main-content</div>
+   <div class="sidebar">sidebar</div>
+
+    <div class="twin">twin</div>
+    <div class="twin1">twin</div>
+    <div class="footer">footer</div>
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Flexbox Layout</title>
+    <style>
+    body {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.header {
+    background-color: #333;
+    color: #fff;
+    padding: 1em;
+    text-align: center;
+}
+
+.main-content {
+    display: flex;
+    flex: 1;
+}
+
+.menu {
+    background-color: #444;
+    color: #fff;
+    padding: 1em;
+    width: 20%;
+}
+
+.main {
+    background-color: #555;
+    color: #fff;
+    padding: 1em;
+    flex: 1;
+}
+
+.ad1 {
+    background-color: #756767;
+    color: #fff;
+    padding: 1em;
+    width: 20%;
+}
+
+.ad2 {
+    background-color: #777;
+    color: #fff;
+    padding: 1em;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 20%;
+}
+
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 1em;
+    text-align: center;
+}
+
+
+</style>
+    
+</head>
+<body>
+    <div class="container">
+        <header class="header">Header</header>
+        <div class="main-content">
+            <nav class="menu">Menu</nav>
+            <main class="main">Main</main>
+            <aside class="ad1">Ad1</aside>
+        </div>
+        <aside class="ad2">Ad2</aside>
+        <footer class="footer">Footer</footer>
+    </div>
+</body>
+</html>

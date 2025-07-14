@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        .container{
+            display: flex;
+            background-color: aliceblue;
+            flex-direction: column;
+            height: 90vh;
+            margin: 10px;
+            border: 2px solid black;
+        }
+
+        #header1{
+            display: flex;
+            background-color: aqua;
+            padding: 40px;
+            gap: 10px;
+            margin: 10px;
+        }
+
+        .main-content{
+            display: flex;
+            flex: 1; 
+        }
+        .sidebar{
+            background-color:brown;
+            width: 25%;
+            padding: 10px;
+        }
+
+        .content{
+            display: flex;
+            flex-direction: column;
+            padding: 10px;
+            flex: 1;
+            gap: 10px;
+        }
+       
+        .box1{
+            background-color: green;
+            padding: 20px;
+
+        }
+          .box2{
+            background-color: yellow;
+            padding: 20px;
+        }
+
+        .boxes{
+            display: flex;
+            gap: 10px;
+            flex: 1;
+        }
+          .box3{
+            background-color: cyan;
+            padding: 20px;
+            flex: 1;
+        }
+          .box4{
+            background-color: purple;
+            padding: 20px;
+            flex: 1;
+          }
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header id="header1"></header>
+
+        <div class="main-content">
+            <div class="sidebar">sidebar</div>
+            <div class="content">
+                <div class="box1">box1</div>
+                <div class="box2">box2</div>
+                <div class="boxes">
+                    <div class="box3">box3</div>
+                    <div class="box4">box4</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

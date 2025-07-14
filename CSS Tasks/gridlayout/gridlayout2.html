@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        *{
+            margin: 0;padding: 0;
+            
+        }
+        .container{
+            width: 500px;
+            height: 500px;
+            background-color: white;
+            border: .025rem solid black;
+            margin: 5rem auto;
+            padding: 10px;
+             display: grid;  
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: repeat(4, 1fr);
+            row-gap: 1rem;
+            column-gap: 2rem;
+        }
+       .header{
+            grid-column-start: 1;
+            grid-column-end: 4;
+            background-color: orange;
+        }
+        
+        
+        .box1{
+            background-color: orange;
+            grid-column-start: 1;
+            grid-column-end: 2;
+            grid-row-start: 2;
+            grid-row-end: 2;
+        }
+        .box2{
+            background-color: orange;
+            grid-column-start: 2;
+            grid-column-end: 2;
+            grid-row-start: 2;
+            grid-row-end: 2;
+        }
+        .box3{
+            background-color: orange;
+            grid-column-start: 3;
+            grid-column-end: 4;
+            grid-row-start: 2;
+            grid-row-end: 2;
+        }
+        sidebar{
+            background-color: orange;
+            grid-column-start: 4;
+            grid-column-end: 5;
+            grid-row-start: 2;
+            grid-row-end: 4;
+        }
+        .main-content{
+            background-color: orange;
+            grid-column-start: 1;
+            grid-column-end: 4;
+            grid-row-start: 3;
+            grid-row-end: 4;
+        }
+        footer{
+            background-color: orange;
+            grid-column-start: 1;
+            grid-column-end: 5;
+            grid-row-start: 4;
+            grid-row-end: 5;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">header</div>
+        
+            <div class="box1">small box</div>
+        
+        <div class="box2">small box</div>
+        <div class="box3">small box</div>
+        <sidebar>Sidebar</sidebar>
+        <div class="main-content"> main content</div>
+        <footer>Footer</footer>
+    </div>
+</body>
+</html>

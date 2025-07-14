@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Flex Layout Example</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #e0f0ff;
+      padding: 20px;
+    }
+
+    .row {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 20px;
+      
+    }
+
+    .box {
+      background-color: #87CEFA;
+      height: 100px;
+      width: 22%;
+      border-radius: 5px;
+      flex-shrink: 1;
+    }
+
+    .big-box {
+      background-color: #add8e6;
+      height: 150px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 24px;
+      color: #800000;
+      border-radius: 5px;
+      
+    }
+  </style>
+</head>
+<body>
+
+  <div class="row">
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+  </div>
+
+  <div class="big-box">
+    
+  </div>
+
+</body>
+</html>

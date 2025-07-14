@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        *{
+            margin: 0;padding: 0;
+        }
+        .Responsivecards{
+            width: 100%;
+            height: 100vh;
+            background-color: rgba(225, 225, 225, 1) ;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .cards{
+            display: flex;
+            gap: 1rem;
+            width: 800px;
+            height: 500px;
+            border: .025rem solid black;
+            justify-content: center;
+            align-items: center;
+            padding: 10px;
+        }
+        .container{
+            gap: 1rem;
+            display: flex;
+            flex-direction: column; 
+            padding: 10px;
+           border: 0.025rem solid;
+        }
+        .container1{
+            gap: 1rem;
+            display: flex;
+            flex-direction: column;
+             border: 0.025rem solid;
+             padding: 10px;
+            }
+        .container2{
+            gap: 1rem;
+            display: flex;
+            flex-direction: column;
+             border: 0.025rem solid;
+             padding: 10px;
+        }
+        .A{
+            display: flex;
+            font-size: 2rem;
+            font-weight: bolder;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            justify-content: center;
+            align-items: center;
+        }
+        .profile-img{
+           width: 50px;
+            height: 50px;
+            justify-self: center;
+            align-self: center;
+            padding: 20px;
+         }
+          .tile {
+            padding: 1rem;
+            display: flex;
+            gap: 2rem;
+        }
+        .button {
+            flex: 1 1;
+            padding: 1rem 1rem;
+            border-radius: 14px;
+            border: none;
+            background-color: black;
+            color: white;
+            
+            font-weight: bold;
+        }
+
+        
+    </style>
+</head>
+<body>
+    <div class="Responsivecards">
+        <div class="cards">
+            <div>
+            <div class="container">
+                <div class="profile-img">
+                    <img src="./Images/twitter.png" alt="">
+                </div>
+                <div class="A">TWITTER</div>
+               <div class="discription"><p>Lorem ipsum dolor sit, </p>
+                <p>amet consectetur adipisicing elit.</p></div>
+                 <div class="tile">
+                <button class="button">Read More</button>
+            </div>
+            </div>
+        </div>
+         <div>
+        <div class="container1">
+            <div class="profile-img">
+                 <img src="./Images/instagram.png" alt="">
+            </div>
+            <div class="A">INSTAGRAM</div>
+           <div class="discription"><p>Lorem ipsum dolor sit, </p>
+            <p>amet consectetur adipisicing elit.</p></div>
+             <div class="tile">
+                <button class="button">Read More</button>
+            </div>
+        </div>
+        
+            </div>
+            <div>
+        <div class="container2">
+            <div class="profile-img">
+                 <img src="./Images/youtube .png" alt="">
+            </div>
+            <div class="A">YOUTUBE</div>
+           <div class="discription"><p>Lorem ipsum dolor sit, </p>
+            <p>amet consectetur adipisicing elit.</p></div>
+             <div class="tile">
+                <button class="button">Read More</button>
+            </div>
+        </div>
+       
+            </div>
+        </div>
+    </div>
+</body>
+</html>

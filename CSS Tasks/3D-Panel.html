@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .cards {
+               perspective: 600px;
+            }
+
+        .card {
+            margin: 200px auto;
+          width: 200px;
+          height: 250px;
+          background: #16161d;
+          border: 2px solid #555555;
+          border-radius: 4px;
+          position: relative;
+          transform-style: preserve-3d;
+          transition: all .5s;
+          display: flex;
+          justify-content: center;
+         align-items: center;
+        }
+        
+        .card:hover {
+          transform: translateZ(20px) rotateX(20deg) rotateY(20deg);
+        }
+        
+        .card_title {
+          color: #fff;
+          position: absolute;
+          top: 40%;
+          right: 50px;
+          transform: translateY(-60%);
+          transition: all .5s;
+          font: 700 1.5rem monospace;
+        
+        }
+        
+        .card:hover .card_title {
+          transform: translateZ(80px);
+        }
+            </style>
+</head>
+<body>
+    <div class="cards">
+    <figure class="card">
+        <figcaption class="card_title">3D Hover</figcaption>
+    </figure>
+</div>
+</body>
+</html>

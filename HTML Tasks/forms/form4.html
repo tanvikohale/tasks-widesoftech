@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <h2>Contact Form</h2>
+
+  <form>
+    <label for="name">Name:</label><br>
+    <input type="text"  id="name" name="name" ><br><br>
+
+   <label for="Email">Email:</label><br>
+    <input type="email"id="Email" name="Email"><br><br>
+
+    <input type="submit" value="Register">
+  </form>
+
+
+
+<!--next form-->
+
+
+  <h1>Student Registration Form</h1>
+
+  <form action="#" method="post">
+    <!-- Name -->
+    <label for="name">Full Name:</label><br>
+    <input type="text" id="name" name="name" required><br><br>
+
+    <!-- Email -->
+    <label for="email">Email:</label><br>
+    <input type="email" id="email" name="email" required><br><br>
+
+    <!-- Phone -->
+    <label for="phone">Phone Number:</label><br>
+    <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" placeholder="10-digit number" required><br><br>
+
+    <!-- Gender -->
+ <label>Gender:</label><br>
+    <input type="radio" id="male" name="gender" value="male">
+    <label for="male">Male</label><br>
+    <input type="radio" id="female" name="gender" value="female">
+    <label for="female">Female</label><br><br>
+
+    <!-- Courses (checkboxes) -->
+    <label>Choose Your Courses:</label><br>
+    <input type="checkbox" id="html" name="course" value="HTML">
+    <label for="html">HTML</label><br>
+    <input type="checkbox" id="css" name="course" value="CSS">
+    <label for="css">CSS</label><br>
+    <input type="checkbox" id="js" name="course" value="JavaScript">
+    <label for="js">JavaScript</label><br><br>
+
+    <!-- Dropdown (Select) -->
+    <label for="city">Select Your City:</label><br>
+    <select id="city" name="city">
+      <option value="mumbai">Mumbai</option>
+      <option value="delhi">Delhi</option>
+      <option value="bangalore">Bangalore</option>
+      <option value="pune">Pune</option>
+    </select><br><br>
+<!-- Comments -->
+    <label for="comments">Any Comments:</label><br>
+    <textarea id="comments" name="comments" rows="4" cols="30" placeholder="Write something..."></textarea><br><br>
+
+    <!-- Submit Button -->
+    <input type="submit" value="Register">
+  </form>
+
+  
+</body>
+</html>
+
+
+

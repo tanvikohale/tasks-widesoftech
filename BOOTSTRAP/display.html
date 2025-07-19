@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="./bootstrap-5/css/bootstrap.css">
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        .element1{
+            width: 300px;
+            height: 300px;
+        }
+        .element2{
+            width: 400px;
+            height: 400px;
+            flex-direction: column;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+        .child{
+            flex-wrap: wrap;
+            width: 100px;
+            height: 100px;
+        }
+    </style>
+</head>
+<body>
+    <div class="element1 bg-info mx-auto my-5"></div>
+    <br><br>
+   
+    <div class="element1 bg-warning mx-5 my-5 d-block p-4">element1</div>
+    <br>
+    <div class="element1 bg-info mx-5 my-auto d-inline-block"></div>
+     <div class="element2 bg-success p-4 mx-5 my-5 d-flex">
+       <div class="child child 1 bg-warning"></div>
+       <div class="child child 2 bg-warning"></div>
+       <div class="child child 3 bg-warning"></div>
+       <div class="child child 4 bg-warning"></div>
+       <div class="child child 5 bg-warning"></div>
+       <div class="child child 6 bg-warning"></div>
+       <div class="child child 7 bg-warning"></div>
+       <div class="child child 8 bg-warning"></div>
+       <div class="child child 9 bg-warning"></div>
+    </div>
+    <br><br>
+</body>
+</html>

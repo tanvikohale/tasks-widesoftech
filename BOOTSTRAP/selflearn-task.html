@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./bootstrap-5/css/bootstrap.css">
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            
+        }
+        .box{
+            width: 300px;
+            height: 300px;
+        }
+        .element{
+            position: absolute;
+            top: 30%;
+        }
+       .box3{
+        width: 300px;
+        height: 300px;
+        position: absolute;
+        top: 55%;
+       }
+       .box4{
+        position: absolute;
+        top: 100%;
+       }
+    </style>
+</head>
+<body>
+    <!--FLOAT - used to move the elements left or right-->
+    <!-- classes - float-[start, end, & none]-->
+    <!-- float supports the breakpoints-->
+
+    <div class="box bg-success float-start "></div>
+    <div class="box1 bg-success float-end" style="width: 300px; height: 300px;"></div>
+
+    <!--INTERACTION - used to control how users interact with elements-->
+    <!--Text-Selection classes - user-select-[all, auto, none] -->
+    <!-- Pointers event classes - pe-[none & auto]-->
+     <div class="element p-5 fs-4 fst-italic">
+        <p class="user-select-all">This paragraph will be selected clicked by the users</p>
+        <p class="user-select-auto">This paragraph has default behavior</p>
+        <p class="user-select-none">This paragraph will not be selected clicked by the users</p>
+        <div>
+            <p class="pe-none"><a href="#">This link</a> can't selected</p>
+            <p class="pe-auto"><a href="#">This link</a> can be selected </p>
+        </div>
+     </div>
+
+     <!--SHADOW - used to add shadow to boxes-->
+     <!--have 4 classes no shadow, small shadow(sm), regular shadow, large shadow(lg)-->
+     <!-- SYNTAX - classes - shadow-[none, sm, lg]-->
+     <div class="box3 bg-danger m-5 rounded-circle shadow-lg"></div>
+
+     <!-- LINK - used to style the link-->
+
+     <!-- it supports the link opacity, link underlines, underline offset, hoverd varients, color links-->
+
+     <!-- LINK_OPACITY - values[10, 25, 50, 75, 100]
+      SYNTAX - link-opacity-values[] & link-opacity-values[]-hover-->
+
+     <!-- LINK UNDERLINE - SYNTAX - link-underline-color[primary, secondary.......etc bootstrap colors]-->
+
+     <!-- UNDERLINE OFFSET - first one is default link classes are offset[1, 2,&3]
+      SYNTAX - link-offset-values[1, 2, 3]-->
+
+     <!-- UNDERLINE OPACITY - SYNTAX- link-underline link-underline-opacity-values[0, 10, 25, 50, 75, 100]-->
+
+      <!--COLORED LINKS - link-color[primary......etc]-->
+     
+     <div class="box4 fs-4 ms-5">
+        <p ><a class="link-opacity-25" href="#">link opacity</a></p>
+        <p ><a class="link-opacity-75" href="#">link opacity</a></p>
+        <p ><a class="link-opacity-25 link-opacity-75-hover" href="#">link opacity hover</a></p>
+        <p ><a class="link-offset-3 link-opacity-25-hover" href="#">link offset and hover</a></p>
+        <p ><a class=" link-underline link-underline-opacity-25" href="#">link underline and underline opacity</a></p>
+        <p ><a class="link-success" href="#">colored link</a></p>
+        <p ><a class="link-danger link-offset-3 link-underline-primary link-offset-2-hover link-underline-opacity-25 link-underline-opacity-100-hover " href="#">All link classes</a></p>
+     </div>
+</body>
+</html>

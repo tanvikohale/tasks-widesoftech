@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./bootstrap-5/css/bootstrap.css">
+    <style>
+        .element{
+            width: 500px;
+            height: 500px;
+        }
+        
+        .child{
+            width: 150px;height: 150px;
+        }
+    </style>
+</head>
+<body>
+    <div class=" element d-flex border border-dark gap-1 p-2 text-center justify-content-center align-items-stretch">
+        <div class="childs bg-danger flex-grow-1">flex item 1</div>
+        <div class="childs bg-info ">flex item 2</div>
+    </div>
+    <br>
+    <div class=" element d-flex border border-dark gap-1 p-2 flex-column flex-wrap justify-content-center align-items-center">
+        <div class="child bg-danger flex-grow-1">flex item 1</div>
+        <div class="child bg-secondary flex-grow-1">flex item 2</div>
+        <div class="child bg-info flex-grow-1">flex item 3</div>
+        <div class="child bg-danger flex-grow-1">flex item 4</div>
+         <div class="child bg-danger flex-grow-1">flex item 5</div>
+        <div class="child bg-warning flex-grow-1">flex item 6</div>
+        <div class="child bg-success flex-grow-1">flex item 7</div>
+        
+    </div>
+</body>
+</html>

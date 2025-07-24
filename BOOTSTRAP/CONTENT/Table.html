@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="../bootstrap-5/css/bootstrap.css">
+
+</head>
+<body>
+    <div class="container-fluid py-5">
+         <span class="fw-bolder">Table Striped & Table Hover</span>
+        <div class="container">
+            <table class="table table-striped table-hover table-bordered">
+                <tr class="table-primary">
+                    <th>Name </th>
+                    <th>Phone</th>
+                    <th>Address</th>
+                </tr>
+                <tr class="table-danger">
+                    <th>Soniya </th>
+                    <th>7854693254</th>
+                    <th>Nagpur</th>
+                </tr>
+                 <tr class="table-info">
+                    <th>Riya </th>
+                    <th>7854693256</th>
+                    <th>Pune</th>
+                </tr>
+            </table>
+        </div>
+
+        <span class="fw-bolder">Table striped columns</span>
+         <div class="container">
+            <table class="table table-dark table-striped-columns  table-bordered">
+
+                <tr>
+                    <th>Sr.no</th>
+                    <th>Name </th>
+                    <th>Phone</th>
+                    <th>Address</th>
+                </tr>
+                <tr>
+                    <th>1</th>
+                    <td>Soniya </td>
+                    <td>7854693254</td>
+                    <td>Nagpur</td>
+                </tr>
+                 <tr>
+                    <th>2</th>
+                    <td>Riya </td>
+                    <td>7854693256</td>
+                    <td>Pune</td>
+                </tr>
+                <tr class="text-center">
+                    <th colspan="4">End Table</th>
+                </tr>
+            </table>
+        </div>
+
+
+        <span class="fw-bolder">Table Active & borderless</span>
+         <div class="container">
+            <table class="table table-borderless ">
+
+                <tr class="table-active">
+                    <th>Sr.no</th>
+                    <th>Name </th>
+                    <th>Phone</th>
+                    <th>Address</th>
+                </tr>
+                <tr>
+                    <th>1</th>
+                    <td>Soniya </td>
+                    <td>7854693254</td>
+                    <td>Nagpur</td>
+                </tr>
+                 <tr>
+                    <th>2</th>
+                    <td class="table-active">Riya </td>
+                    <td>7854693256</td>
+                    <td class="table-active">Pune</td>
+                </tr>
+                <tr class="text-center">
+                    <th colspan="4">End Table</th>
+                </tr>
+            </table>
+        </div>
+
+         <span class="fw-bolder">Table Border color Utilities</span>
+         <div class="container">
+            <table class="table table-striped table-bordered border-primary">
+
+                <tr class="border-danger">
+                    <th>Sr.no</th>
+                    <th>Name </th>
+                    <th>Phone</th>
+                    <th>Address</th>
+                </tr>
+                <tr>
+                    <th>1</th>
+                    <td>Soniya </td>
+                    <td>7854693254</td>
+                    <td>Nagpur</td>
+                </tr>
+                 <tr>
+                    <th>2</th>
+                    <td>Riya </td>
+                    <td>7854693256</td>
+                    <td>Pune</td>
+                </tr>
+                <tr class="text-center">
+                    <th colspan="4">End Table</th>
+                </tr>
+            </table>
+        </div>
+
+         <span class="fw-bolder">Small Tables</span>
+         <div class="container">
+            <table class="table table-striped table-bordered table-sm">
+
+                <tr>
+                    <th>Sr.no</th>
+                    <th>Name </th>
+                    <th>Phone</th>
+                    <th>Address</th>
+                </tr>
+                <tr>
+                    <th>1</th>
+                    <td>Soniya </td>
+                    <td>7854693254</td>
+                    <td>Nagpur</td>
+                </tr>
+                 <tr>
+                    <th>2</th>
+                    <td>Riya </td>
+                    <td>7854693256</td>
+                    <td>Pune</td>
+                </tr>
+                <tr class="text-center">
+                    <th colspan="4">End Table</th>
+                </tr>
+            </table>
+        </div>
+
+        <!--It is only use in thead tbody and tfoot-->
+         <span class="fw-bolder">Table group-dividers</span>
+         <div class="container">
+            <table class="table table-hover table-bordered ">
+              <thead>
+                <tr>
+                  <th>#</th>
+                  <th>Name</th>
+                  <th>Age</th>
+                  <th>Address</th>
+                </tr>
+              </thead>
+              <tbody class="table-group-divider">
+                <tr>
+                  <th>1</th>
+                  <td>Soniya</td>
+                  <td>21</td>
+                  <td>Nagpur</td>
+                </tr>
+                <tr>
+                  <th>2</th>
+                  <td>Riya</td>
+                  <td>18</td>
+                  <td>Pune</td>
+                </tr>
+                <tr>
+                  <th>3</th>
+                  <td>Sakshi</td>
+                  <td>20</td>
+                  <td>Wardha</td>
+                </tr>
+              </tbody>
+              <tfoot class="table-group-divider">
+                <tr class="text-center">
+                    <th colspan="4">End Table</th>
+                </tr>
+              </tfoot>
+            </table>
+        </div>
+
+                 <span class="fw-bolder">Nested Tables</span>
+         <div class="container">
+            <table class="table table-striped table-bordered table-sm">
+
+                <tr>
+                    <th>Sr.no</th>
+                    <th>Name </th>
+                    <th>Phone</th>
+                    <th>Address</th>
+                </tr>
+                <tr>
+                    <th>1</th>
+                    <td>Soniya 
+                        <table class="table table-bordered border-info">
+                            <tr>
+                                <th>Age</th>
+                                 <td>21</td>
+                            </tr>
+                            <tr>
+                                <th>Email</th>
+                                <td class="table-active">soniya@gamil.com</td>
+                            </tr>
+                        </table>
+                    </td>
+                    <td>7854693254</td>
+                    <td>Nagpur</td>
+                </tr>
+                 <tr>
+                    <th>2</th>
+                    <td>Riya </td>
+                    <td>7854693256</td>
+                    <td>Pune</td>
+                </tr>
+                <tr class="text-center">
+                    <th colspan="4">End Table</th>
+                </tr>
+            </table>
+        </div>
+    </div>
+</body>
+</html>

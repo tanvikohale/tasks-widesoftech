@@ -4,31 +4,40 @@
   <meta charset="UTF-8">
   <title>Bootstrap Grid Boxes</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
- <link rel="stylesheet" href="./bootstrap-5/css/bootstrap.css">
+ <link rel="stylesheet" href="../bootstrap-5/css/bootstrap.css">
 </head>
-<body class="p-4">
+<body>
 
-  <div class="container">
-    <div class="row ">
-      <div class="row gap-3 ">
+ <div class=" container-fluid ">
+    <div class=" container p-3 my-5">
+      <div class=" " style="height: 300px;">
 
-         <div class="col-12 ">
-           <div class=" row bg-secondary rounded-3 w-100" style="height: 50px;"></div>
-         </div>
+        <div class="row gap-4 h-100">
 
-         <div class="row gap-3">
-           <div class=" col-4 bg-danger rounded-3 " style="height: 150px;"></div>
-           <div class=" col bg-primary rounded-3 " style="height: 150px;"></div>
-         </div>
+          <div class="col-md-12 col-lg-2 ">
+            <div class="row h-100 ">
+              <div class="bg-secondary p-4 rounded-4"></div>
+            </div>
+          </div>
 
-         <div class="row gap-3">
-           <div class=" col-7 bg-success rounded-3 " style="height: 50px;"></div>
-           <div class=" col bg-warning rounded-3 " style="height: 50px;"></div>
-         </div>
+          <div class="col d-flex flex-column gap-4">
 
+            <div class="row gap-4 flex-grow-1">
+              <div class="col-md-4 col-12 bg-danger rounded-4 p-4"></div>
+              <div class="col-md col-12 bg-info rounded-4 p-4"></div>
+            </div>
+            <div class="row gap-4">
+              <div class="col-md col-12 bg-success rounded-4 p-4"></div>
+              <div class="col-md-6 col-12 bg-primary rounded-4 p-4"></div>
+            </div>
+
+          </div>
+
+        </div>
       </div>
+         
     </div>
-  </div>
+ </div>
 
 </body>
 </html>

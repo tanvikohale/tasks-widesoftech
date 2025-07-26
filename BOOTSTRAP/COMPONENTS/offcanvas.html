@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="../bootstrap-5/css/bootstrap.css">
+    <script src="../bootstrap-5/js/bootstrap.bundle.min.js"></script>
+
+</head>
+<body>
+    <div class="container-fluid p-5">
+        <div class="container p-5 border border-danger">
+            <button class="btn btn-outline-info p-2" data-bs-toggle="offcanvas" data-bs-target="#offcanvas-example">
+                Open Top Offcanvas
+            </button>
+        
+            <div class="offcanvas offcanvas-top bg-dark text-light" id="offcanvas-example">
+                <div class="offcanvas-header">
+                    <h1 class="offcanvas-title">Offcanvas Top</h1>
+                   <button type="button" class="btn-close bg-light" data-bs-dismiss="offcanvas"></button>
+                </div>
+                <div class="offcanvas-body">
+                    This is offcanvas open from Top
+                </div>
+            </div>
+        </div>
+        <br>
+
+         <div class="container p-5 border border-danger">
+            <button class="btn btn-outline-success p-2" data-bs-toggle="offcanvas" data-bs-target="#offcanvas">
+                Open Bottom Offcanvas
+            </button>
+        
+            <div class="offcanvas offcanvas-bottom bg-dark text-light" id="offcanvas">
+                <div class="offcanvas-header">
+                    <h1 class="offcanvas-title">Offcanvas Bottom</h1>
+                     <button type="button" class="btn-close bg-light" data-bs-dismiss="offcanvas"></button>
+                </div>
+                <div class="offcanvas-body">
+                    This is offcanvas open from Bottom
+                </div>
+            </div>
+        </div>
+        <br>
+
+         <div class="container p-5 border border-danger">
+            <button class="btn btn-outline-danger p-2" data-bs-toggle="offcanvas" data-bs-target="#offcanvas-example1">
+                Open Right Offcanvas
+            </button>
+        
+            <div class="offcanvas offcanvas-end bg-dark text-light" id="offcanvas-example1">
+                <div class="offcanvas-header">
+                    <h1 class="offcanvas-title">Offcanvas Top</h1>
+                     <button type="button" class="btn-close bg-light" data-bs-dismiss="offcanvas"></button>
+                </div>
+                <div class="offcanvas-body">
+                    This is offcanvas open from Right
+                </div>
+            </div>
+        </div>
+        <br>
+
+         <div class="container p-5 border border-danger">
+            <button class="btn btn-outline-primary p-2" data-bs-toggle="offcanvas" data-bs-target="#offcanvas-example2">
+                Open Strat Offcanvas
+            </button>
+        
+            <div class="offcanvas offcanvas-start bg-dark text-light" id="offcanvas-example2">
+                <div class="offcanvas-header">
+                    <h1 class="offcanvas-title">Offcanvas Top</h1>
+                     <button type="button" class="btn-close bg-light" data-bs-dismiss="offcanvas"></button>
+                </div>
+                <div class="offcanvas-body">
+                    This is offcanvas open from Strat
+                </div>
+            </div>
+        </div>
+        <br>
+
+        <div class="container p-5 border border-danger">
+            <button class="btn btn-outline-secondary p-2 fs-bold" data-bs-toggle="offcanvas" data-bs-target="#offcanvas-example3">
+                Toggle Static Offcanvas
+            </button>
+        
+            <div class="offcanvas offcanvas-start" data-bs-backdrop="static" id="offcanvas-example3">
+                <div class="offcanvas-header">
+                    <h1 class="offcanvas-title">Offcanvas Static</h1>
+                     <button type="button" class="btn-close bg-light" data-bs-dismiss="offcanvas"></button>
+                </div>
+                <div class="offcanvas-body">
+                    If you click outside of the offcanvas it will not close.
+                </div>
+            </div>
+        </div>
+        <br>
+
+        <div class="container p-5 border border-danger">
+            <a href="#example1" data-bs-toggle="offcanvas">Open Offcanvas using link</a>
+            <button class="btn btn-outline-warning p-2 fs-bold" data-bs-toggle="offcanvas" data-bs-target="#example1">
+                 Offcanvas using button
+            </button>
+        
+            <div class="offcanvas offcanvas-start" data-bs-backdrop="false" id="example1">
+                <div class="offcanvas-header">
+                    <h1 class="offcanvas-title">Offcanvas</h1>
+                     <button type="button" class="btn-close bg-light" data-bs-dismiss="offcanvas"></button>
+                </div>
+                <div class="offcanvas-body">
+                    offcanvas we open through link and button.
+                </div>
+            </div>
+        </div>
+        <br>
+
+        <div class="container p-5 border border-danger">
+            <button class="btn btn-outline-secondary p-2 fs-bold" data-bs-toggle="offcanvas" data-bs-target="#offcanvas-example4">
+                Toggle Scrolling Offcanvas
+            </button>
+        
+            <div class="offcanvas offcanvas-start bg-dark text-light" data-bs-scroll="true" data-bs-backdrop="static" id="offcanvas-example4">
+                <div class="offcanvas-header">
+                    <h1 class="offcanvas-title">Offcanvas Scrolling</h1>
+                     <button type="button" class="btn-close bg-light" data-bs-dismiss="offcanvas"></button>
+                </div>
+                <div class="offcanvas-body">
+                    If we open offcanvas we able to scroll the rest of page to see this option in action.
+                </div>
+            </div>
+        </div>
+        <br>
+    </div>
+</body>
+</html>

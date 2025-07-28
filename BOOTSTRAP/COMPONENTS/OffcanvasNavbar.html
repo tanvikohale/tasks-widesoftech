@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+     <link rel="stylesheet" href="../bootstrap-5/css/bootstrap.css">
+    <script src="../bootstrap-5/js/bootstrap.bundle.min.js"></script>
+
+</head>
+<body>
+    <div class="container-fluid bg-dark my-5">
+       <div class="container p-2">
+            <nav class="navbar navbar-expand-md p-2 navbar-dark bg-dark" >
+
+                 <a class="navbar-brand" href="">Offcanvas Navbar</a>
+
+                  <button class="navbar-toggler" data-bs-toggle="offcanvas" data-bs-target="#offcanvasnavbar">
+                      <span class="navbar-toggler-icon"></span>
+                  </button>
+
+                <div class="offcanvas offcanvas-start bg-dark text-light" id="offcanvasnavbar">
+
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title navbar-brand">Offcanvas Navbar</h5>
+                         <button type="button" class="btn-close bg-light" data-bs-dismiss="offcanvas"></button>
+                    </div>
+
+                    <div class="offcanvas-body text-light">
+                        <ul class="navbar-nav d-flex align-items-md-center ms-auto ">
+                            <li class="nav-item">
+                                <a class="nav-link" href="">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="">Contact</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="" data-bs-toggle="dropdown">About</a>
+                                <ul class="dropdown-menu" >
+                                    <li class="dropdown-item">Dropdown 1</li>
+                                    <li class="dropdown-item">Dropdown 2</li>
+                                    <li class="dropdown-item">Dropdown 3</li>
+                                    <li class="dropdown-item">Dropdown 4</li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="">Services</a>
+                            </li>
+                       </ul>
+                       <div class="d-flex gap-4">
+                          <div class="form-floating">
+                          <input class="form-control" id="float" type="search" placeholder="Search Here......">
+                          <label for="float">Search Here...</label>
+                          </div>
+                          <button class="btn btn-outline-success">Search</button>
+                      </div>
+                    </div>
+    </div>
+</body>
+</html>

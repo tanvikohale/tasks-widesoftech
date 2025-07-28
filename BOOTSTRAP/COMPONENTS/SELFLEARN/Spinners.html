@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="../../bootstrap-5/css/bootstrap.css">
+    <script src="../../bootstrap-5/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="container my-5 border border-dark p-5">
+            <div class="spinner-border"></div>
+        </div>
+        <br>
+        <h3>Colors</h3>
+        <div class="spinner-border text-secondary ms-5"></div>
+        <div class="spinner-border text-warning ms-5"></div>
+        <div class="spinner-border text-info ms-5"></div>
+
+        <br>
+        <h3>Growing Spinner</h3>
+        <div class="ms-5 spinner-grow "></div>
+        <div class="ms-5 spinner-grow text-danger "></div>
+        <br><br><br>
+        <h3>Placement (flex)</h3>
+        <div class="container border border-dark p-2">
+            <div class="d-flex align-items-center">
+                <strong>Loading.....</strong>
+                <span class="spinner-border ms-auto"></span>
+            </div>
+        </div>
+        <!-- Spinner size -->
+        <!-- classes like spinner-border-sm or spinner-grow-sm-->
+        <!-- To Change the dimensions we also use custom css-->
+         <br>
+         <br>
+         <h3>Spinner buttons</h3>
+         <div class="container">
+            <div>
+                <button class="btn btn-success">
+                    <span class="spinner-border spinner-border-sm"></span>
+                </button>
+                <button class="btn btn-success">
+                    <span class="spinner-border spinner-border-sm"></span>
+                    <span>Loading....</span>
+                </button>
+                 <button class="btn btn-success">
+                    <span class="spinner-grow spinner-grow-sm"></span>
+                    <span>Loading....</span>
+                </button>
+            </div>
+         </div> 
+    </div>
+</body>
+</html>

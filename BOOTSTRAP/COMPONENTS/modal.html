@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="../bootstrap-5/css/bootstrap.css">
+    <script src="../bootstrap-5/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>  
+
+    <div class="container-fluid">
+        <div class="container p-5 border border-dark">
+            <button class="btn btn-danger" data-bs-target="#modal1" data-bs-toggle="modal">open modal</button>
+        </div>
+    </div>
+    <div class="modal fade" id="modal1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header bg-dark">
+                    <span class="text-light">welcome !</span>
+                    <button class="btn-close bg-light" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body ">
+                    <img class="img-fluid" src="../CONTENT/flower.jpg" alt="">
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button class="btn btn-danger" >Save Changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br>
+
+    <div class="container-fluid">
+        <div class="container p-5 border border-dark">
+            <button class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#modal2" data-bs-backdrop="Static">Open Static Modal</button>
+        </div>
+    </div>
+    <div class="modal fade" id="modal2"  data-bs-backdrop="static">
+        <div class="modal-dialog modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2 class="modal-title">Modal</h2>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img class=" img-top" src="https://tse3.mm.bing.net/th/id/OIP.lr2xUM3oj2h3IFg8LYqRWgHaH6?pid=Api&P=0&h=180" alt="">
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-secondary" data-bs-dismiss="modal">Close </button>
+                    <button class="btn btn-success">Next ></button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br>
+
+    <div class="container-fluid">
+        <div class="container p-5 border border-dark">
+            <button class="btn btn-info" data-bs-toggle="modal" data-bs-target="#modal3" data-bs-backdrop="Static">Toggle Beetween modals</button>
+        </div>
+    </div>
+    <div class="modal fade" id="modal3"  data-bs-backdrop="static">
+        <div class="modal-dialog ">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2 class="modal-title">Modal</h2>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img class=" img-top img-fluid" src="../CONTENT/flower.jpg" alt="">
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-success" data-bs-toggle="modal" data-bs-target="#modal4">Open Second Modal </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="modal4"  data-bs-backdrop="static">
+        <div class="modal-dialog ">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2 class="modal-title">Modal</h2>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img class=" img-top" src="https://tse3.mm.bing.net/th/id/OIP.lr2xUM3oj2h3IFg8LYqRWgHaH6?pid=Api&P=0&h=180" alt="">
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#modal3">Back to First Modal </button>
+                    <button class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+      
+</body>
+</html>

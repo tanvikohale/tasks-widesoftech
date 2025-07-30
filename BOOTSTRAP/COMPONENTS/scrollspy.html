@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="../bootstrap-5/css/bootstrap.css">
+    <script src="../bootstrap-5/js/bootstrap.bundle.min.js"></script>
+
+    <style>
+        /*.nav-link.active{
+            background-color: transparent !important;
+            text-decoration: underline ;
+            
+        }*/
+        .col{
+            height: 250px;
+            overflow: scroll;
+        }
+    </style>
+</head>
+<body>
+    <div class="container-fluid bg-dark " data-bs-spy="scroll" data-bs-target="#navbar">
+        <div id="navbar" class="container p-5 position-sticky top-0"  >
+            <nav  class="navbar navbar-expand  navbar-dark bg-dark">
+                <span class="navbar-brand fst-italic font-monospace fs-3 p-2">Logo</span>
+                <ul class="navbar-nav fs-6 fw-bold fst-italic nav-pills ms-auto">
+                    <li class="nav-item ">
+                        <a class="nav-link active" href="#section-1">section 1</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#section-2">section 2</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#section-3">section 3</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#section-4">section 4</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="container">
+            <div class="bg-dark" id="section-1">
+                <img class="img-fluid" src="../CONTENT/flower.jpg" alt="">
+            </div>
+            <br>
+             <div class="bg-dark" id="section-2">
+                <img class="img-fluid" src="../CONTENT/flower.jpg" alt="">
+            </div>
+            <br>
+             <div class="bg-dark" id="section-3">
+                <img class="img-fluid" src="../CONTENT/flower.jpg" alt="">
+            </div>
+            <br>
+             <div class="bg-dark" id="section-4">
+                <img class="img-fluid" src="../CONTENT/flower.jpg" alt="">
+            </div>
+        </div>
+    </div>
+    <br>
+    <br>
+    <h2>LIST GROUP</h2>
+    <div class="container-fluid "  >
+        <div class="container border border-dark p-3"data-bs-target="#navbar1" data-bs-target="#list-example" data-bs-spy="scroll">
+            <div class="row">
+                <!--<div class="col-2 border-end">
+                    <nav id="navbar1" class="navbar">
+                        <ul class="navbar-nav nav-pills my-5 ms-2">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#item1">Item 1</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#item2">Item 2</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#item3">Item 3</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#item4">Item 4</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>-->
+                <div class="col-3 border-end">
+                    <div id="list-example" class="my-5 list-group">
+                      <a class="avtive list-group-item list-group-item-action" href="#item1">Item 1</a>
+                      <a class="list-group-item list-group-item-action" href="#item2">Item 2</a>
+                      <a class="list-group-item list-group-item-action" href="#item3">Item 3</a>
+                      <a class="list-group-item list-group-item-action" href="#item4">Item 4</a>
+                    </div>
+                </div>
+                <div class="col">
+                    <div>
+                        <h3 id="item1">Item1</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem perspiciatis odit eaque tempora cumque, nisi asperiores distinctio sed repellendus, facilis consequatur, consequuntur beatae quod obcaecati animi veritatis a ab reiciendis.
+                        Perferendis iusto ullam, reiciendis exercitationem, eius facere consectetur voluptatibus non ipsum dolorum alias maxime sapiente dolorem nostrum? Adipisci dolorem laudantium quis reiciendis pariatur harum, omnis, tempore beatae amet, optio ex!
+                        Vitae consequatur totam dolore quo sint fugiat incidunt quia, ad qui quis reiciendis quasi eum aspernatur nesciunt asperiores possimus distinctio magnam dolorum dolorem vero in molestiae debitis! Obcaecati, at quidem.</p>
+                    
+                        <h3 id="item2">Item2</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error a, nesciunt natus libero aliquid doloremque voluptatum nisi adipisci cumque provident similique ea culpa impedit eum enim? Veritatis sit debitis iusto!
+                        Totam pariatur numquam, beatae minus corporis id veritatis excepturi vel quidem alias inventore dolore similique cumque, modi atque optio molestiae molestias, ipsum sed? Aut atque consequuntur eveniet cupiditate autem quidem.
+                        Assumenda omnis dolorum laboriosam at earum, nisi excepturi architecto, dolores sequi totam minima debitis accusantium, esse molestiae tenetur alias possimus. Quidem, dicta. Quasi obcaecati qui minima! Neque molestiae est mollitia.</p>
+
+                        <h3 id="item3">Item3</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab aliquam iure facilis, reiciendis blanditiis explicabo quibusdam maxime in aut amet nihil voluptates, animi sint. Quaerat reiciendis deserunt illo sit id.
+                        Ea sunt rem nesciunt mollitia repellendus amet libero in debitis totam qui accusamus soluta, ad iure aliquid, consectetur reprehenderit quibusdam cupiditate provident impedit! Culpa facere accusantium quisquam, rem asperiores dicta.
+                        Voluptate consequatur praesentium tenetur, culpa, quia error ipsum quos ducimus et ratione officia temporibus dignissimos laudantium cumque molestias consectetur ea magni nostrum dicta odio sit voluptatibus consequuntur. Est, inventore facilis.</p>
+
+                        <h3 id="item4">Item 4</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti nam eius fugit consequatur vel autem, natus, officia sed incidunt sapiente possimus, quas nemo earum eligendi exercitationem sunt veritatis! Rem, incidunt!
+                        Doloribus molestias rem distinctio possimus, non, nulla debitis quos eaque libero quod ex beatae veritatis rerum quo totam omnis magnam eveniet aspernatur nobis sint velit excepturi quaerat dignissimos est? Et.
+                        Nulla laboriosam voluptates asperiores quasi fugit magni, provident vero optio iste. Dicta at suscipit praesentium quas, modi excepturi hic odio totam aliquid repellat atque doloremque quam perspiciatis voluptate ad exercitationem.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

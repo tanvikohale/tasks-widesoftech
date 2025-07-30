@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="../bootstrap-5/css/bootstrap.css">
+    <script src="../bootstrap-5/js/bootstrap.bundle.min.js"></script>
+
+    <style>
+        .nav-tabs .nav-item{
+            flex: 1 1;
+        }
+        .nav-tabs .nav-item button {
+            border-radius: 3;
+        }
+        .nav-tabs .nav-item button.active {
+            background-color: var(--bs-danger) !important;
+        }
+        #content4{
+            height: 300px;
+            overflow: scroll;
+        }
+    </style>
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="container p-3">
+             <ul class="nav-tabs gap-4 nav">
+                <li class="nav-item">
+                    <button data-bs-toggle="tab" data-bs-target="#tab-content1" class="btn btn-primary w-100">
+                        Tab 1
+                    </button>
+                </li>
+                <li class="nav-item">
+                    <button data-bs-toggle="tab" data-bs-target="#tab-content2" class="btn btn-primary w-100">
+                        Tab 2
+                    </button>
+                </li>
+                <li class="nav-item">
+                    <button data-bs-toggle="tab" data-bs-target="#tab-content3" class="btn btn-primary active w-100">
+                        Tab 3
+                    </button>
+                </li>
+                <li class="nav-item">
+                    <button data-bs-toggle="tab" data-bs-target="#tab-content4" class="btn btn-primary w-100">
+                        Tab 4
+                    </button>
+                </li>
+             </ul>
+        </div>
+         <div class="tab-content">
+            <div class="tab-pane fade" id="tab-content1">
+                <h1>this is tab 1</h1>
+            </div>
+            <div class="tab-pane fade" id="tab-content2">
+                <h1>this is tab 2</h1>
+            </div>
+            <div class="tab-pane fade" id="tab-content3">
+                <h1>this is tab 3</h1>
+            </div>
+            <div class="tab-pane fade" id="tab-content4">
+                <h1>this is tab 4</h1>
+            </div>
+        </div>
+    </div>
+    <br>
+    <div class="container-fluid">
+        <div class="container">
+            <div class="row">
+                <div class="col-3 border-end">
+                     <ul class="nav-tabs gap-4 nav d-flex flex-column">
+                       <li class="nav-item">
+                           <button data-bs-toggle="tab" data-bs-target="#content1" class="btn btn-primary w-100">
+                               Image 1
+                           </button>
+                       </li>
+                       <li class="nav-item">
+                           <button data-bs-toggle="tab" data-bs-target="#content2" class="btn btn-primary w-100">
+                               Image 2
+                           </button>
+                       </li>
+                       <li class="nav-item">
+                           <button data-bs-toggle="tab" data-bs-target="#content3" class="btn btn-primary  w-100">
+                               Form
+                           </button>
+                       </li>
+                       <li class="nav-item">
+                           <button data-bs-toggle="tab" data-bs-target="#content4" class="btn btn-primary w-100">
+                               paragraph
+                           </button>
+                       </li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <div class="tab-content">
+                       <div class="tab-pane fade" id="content1">
+                           <h1>This is Flower Imgae</h1>
+                            <img class="img-fluid" src="../CONTENT/flower.jpg" alt="">
+                       </div>
+                       <div class="tab-pane fade" id="content2">
+                           <h1>Panda</h1>
+                           <img src="https://tse2.mm.bing.net/th/id/OIP.9fcwNVORl2ZHcfWi3ZjIVAHaE9?pid=Api&P=0&h=180" alt="">
+                       </div>
+                       <div class="tab-pane fade" id="content3">
+                          <form action="">
+                            <div  class="d-flex flex-column gap-2">
+                                <div class="row">
+                                    <div class="col-auto">
+                                        <div class="col-auto col-form-label fw-bold ">Enter Your Name :</div>
+                                    </div>
+                                    <div class="col-auto">
+                                        <div class="form-floating">
+                                            <input id="float" class="form-control" type="text" placeholder="Enter Your name">
+                                            <label for="float">Enter Your Name</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-auto">
+                                        <div class="col-auto col-form-label fw-bold ">Enter Your E-mail :</div>
+                                    </div>
+                                    <div class="col-auto">
+                                         <div class="form-floating mb-3">
+                                             <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                                             <label for="floatingInput">Email address</label>
+                                         </div>
+                                    </div>
+                                </div>
+                            </div>  
+                            <div class="row align-items-center">
+                                <div class="col-auto col-form-label fw-bold ">Password:</div>
+                                <div class="col-auto">
+                                     <input id="float" class="form-control" type="password">
+                                </div>
+                                <div class="col-auto form-text">
+                                  Must be 8-20 characters long.
+                                </div>
+                            </div> 
+                          </form><br>
+                          <button class="btn btn-outline-danger">Submit</button>
+                       </div>
+                       <div class="tab-pane fade" id="content4">
+                           <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa aspernatur magnam reiciendis error tempora animi? Temporibus modi reprehenderit, aliquam cupiditate a, minus, tenetur maxime sunt expedita qui deleniti iste quaerat!
+                           Hic, voluptas quos. Natus ducimus alias atque dicta obcaecati omnis? Error quos quasi animi maxime nisi nesciunt, laudantium, voluptatibus quas in qui nobis, totam deleniti similique nostrum modi aliquid expedita.
+                           Distinctio reprehenderit maiores doloribus sint laudantium itaque ex molestias temporibus eaque tempore nam adipisci consequuntur minus quisquam, beatae quaerat facere animi. Vel recusandae ipsa, error et explicabo sapiente quia eligendi?
+                           Officia vitae illo necessitatibus distinctio unde optio minima reiciendis dicta modi nulla, iusto quo explicabo nam dignissimos consequuntur velit beatae. Eveniet officiis, ducimus distinctio modi at quod minima ipsam odit.
+                           Iure dolorum ex expedita ullam voluptates asperiores perferendis! Aperiam repellat iste ratione, provident amet dolore sit corrupti quis vitae quisquam deserunt. Mollitia nemo repudiandae quis, distinctio ea earum obcaecati illum!</span>
+                       </div>
+                   </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

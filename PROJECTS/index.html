@@ -19,20 +19,15 @@
     <link rel="stylesheet" href="./global.css">
     <link rel="stylesheet" href="./style.css">
 
-    <style>
-        section {
-            height: 50vh;
-        }
-    </style>
 
 </head>
 
 <body data-bs-spy="scroll" data-bs-target="#navbar">
 
-    <header id="header" class="position-sticky top-0">
+    <header id="header" class="position-sticky top-0 z-3">
         <div class="container-fluid bg-light shadow">
             <div class="container">
-                <nav id="navbar" class="navbar navbar-expand-md navbar-light">
+                <nav id="navbar" class=" navbar navbar-expand-md navbar-light">
                     <div class="navbar-brand d-flex gap-1">
                         <div class="bg-dark rounded-circle position-relative" style="width: 40px; height: 40px;">
                             <i
@@ -57,7 +52,7 @@
                         <div class="offcanvas-body">
                             <ul class="navbar-nav ms-auto gap-4 nav-pills">
                                 <li class="nav-item">
-                                    <a class="nav-link" href="#home">Home</a>
+                                    <a class="nav-link active" href="#hero">Home</a>
                                 </li>
                                 <li class="nav-item">
                                     <a class="nav-link" href="#about">About</a>
@@ -84,7 +79,57 @@
             </div>
         </div>
     </header>
-    <section id="home"></section>
+     <section id="hero">
+        <div class="container-fluid p-0">
+            <div class=" hero-section position-relative">
+                <div class="carousel carousel-fade" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active" data-bs-interval="3000">
+                            <img class="img-fluid" src="./media/carousel-image-1.png" alt="">
+                        </div>
+                        <div class="carousel-item" data-bs-interval="3000">
+                            <img class="img-fluid" src="./media/carousel-image-2.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="content">
+                    <div class="container data ">
+                        <div class="text d-flex align-items-center text-light-custom">
+                            <div class="">
+                                <div class="title fs-1 d-flex flex-column gap-2">
+                                    <span class="text-accent3 fw-bolder">Hello ! <span class="text-light-custom"> I'm
+                                           Tanvi Kohale.</span></span>
+                                    <span>
+                                        MERN Stack Developer
+                                    </span>
+                                </div>
+                                <div class="short-title fs-3 d-flex flex-column gap-2">
+                                    <span>
+                                        I can help you with
+                                    </span>
+                                    <span class="fw-bolder">
+                                        Web Application | Digital Marketing
+                                    </span>
+                                </div>
+                                <div class="discription">
+                                    <p class="text-light-custom opacity-50">Lorem ipsum dolor sit amet consectetur,
+                                        adipisicing elit. Atque eaque, maxime eius repellendus saepe officiis vero,
+                                        assumenda optio beatae accusantium dolorem voluptatibus cupiditate consectetur
+                                        sint deleniti? Voluptatibus ipsum soluta veritatis.</p>
+                                </div>
+                                <div class="hero-cta">
+                                    <button class="navbar-cta">Hire Me !</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="media">
+                            <img class="img-fluid" src="./media/girl.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
     <section id="about"></section>
     <section id="faq"></section>
     <section id="services"></section>

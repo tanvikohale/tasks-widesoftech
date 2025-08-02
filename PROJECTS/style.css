@@ -112,6 +112,7 @@
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(2, 1fr);
     gap: 1rem;
+    row-gap: 3rem;
 }
 
 .perk-section>.text-data {
@@ -130,8 +131,29 @@
     position: relative;
 }
 
+.tile::before{
+    content: "";
+    padding: 2rem;
+    position: absolute;
+    background-color: black;
+    top: 90%;
+    right: 70%;
+    opacity: 0;
+   transform: translate(50% ) ;
+    border-radius: 50%;
+    transition: right 0.5s ease;
+    border: 3px solid rgba(var(--accent3RGB),1);
+}
+
+.tile:hover::before { 
+    opacity: 1;
+    right: 100px;
+    transition: all 1s ease;
+}
+
 .tile:hover {
     background: rgba(var(--accent3RGB), 1) !important;
+    transition: all 2s ease;
 }
 
 .tile:hover>.icon>img {

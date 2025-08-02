@@ -25,15 +25,15 @@
 <body data-bs-spy="scroll" data-bs-target="#navbar">
 
     <header id="header" class="position-sticky top-0 z-3">
-        <div class="container-fluid bg-light shadow">
+        <div class="container-fluid bg-dark shadow">
             <div class="container">
-                <nav id="navbar" class=" navbar navbar-expand-md navbar-light">
+                <nav id="navbar" class=" navbar navbar-expand-md navbar-dark bg-dark d-flex align-items-center">
                     <div class="navbar-brand d-flex gap-1">
                         <div class="bg-dark rounded-circle position-relative" style="width: 40px; height: 40px;">
                             <i
-                                class="fa-solid fa-code text-accent3 position-absolute start-50 top-50 translate-middle"></i>
+                                class="fa-solid fa-code text-light position-absolute start-50 top-50 translate-middle"></i>
                         </div>
-                        <span class="fw-bolder text-dark fs-4">
+                        <span class="fw-bolder text-accent3 fs-3 font-monospace">
                             Tanvi Kohale
                         </span>
                     </div>
@@ -80,57 +80,104 @@
         </div>
     </header>
      <section id="hero">
-        <div class="container-fluid p-0">
-            <div class=" hero-section position-relative">
-                <div class="carousel carousel-fade" data-bs-ride="carousel">
-                    <div class="carousel-inner">
-                        <div class="carousel-item active" data-bs-interval="3000">
-                            <img class="img-fluid" src="./media/carousel-image-1.png" alt="">
+        <div class="background"></div>
+        <div class="content">
+            <div class="container">
+                <div class="row flex-md-row flex-column">
+                    <div class="col text d-flex flex-column gap-3 justify-content-center align-items-start">
+                        <div class="title fs-1">
+                            <span class="text-accent3 fw-bolder">Hello !</span>
+                            <span class="fw-bolder">I'm Tanvi Kohale</span>
                         </div>
-                        <div class="carousel-item" data-bs-interval="3000">
-                            <img class="img-fluid" src="./media/carousel-image-2.png" alt="">
+                        <div class="short-title">
+                            <span class="fs-3">
+                                Lorem ipsum dolor sit amet.
+                            </span>
                         </div>
+                        <div class="discription">
+                            <p class="opacity-50">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui accusantium fugiat expedita
+                                doloribus, beatae sapiente pariatur quos porro iste! Laboriosam assumenda quam nobis
+                                itaque. Amet beatae voluptatum nostrum maxime labore!
+                            </p>
+                        </div>
+
+                        <!-- hero cta -->
+                        <button class="navbar-cta">Hire Me !</button>
+                    </div>
+                    <div class="col media">
+                        <img class="img-fluid" src="./media/girl.png" alt="">
                     </div>
                 </div>
-                <div class="content">
-                    <div class="container data ">
-                        <div class="text d-flex align-items-center text-light-custom">
-                            <div class="">
-                                <div class="title fs-1 d-flex flex-column gap-2">
-                                    <span class="text-accent3 fw-bolder">Hello ! <span class="text-light-custom"> I'm
-                                           Tanvi Kohale.</span></span>
-                                    <span>
-                                        MERN Stack Developer
-                                    </span>
-                                </div>
-                                <div class="short-title fs-3 d-flex flex-column gap-2">
-                                    <span>
-                                        I can help you with
-                                    </span>
-                                    <span class="fw-bolder">
-                                        Web Application | Digital Marketing
-                                    </span>
-                                </div>
-                                <div class="discription">
-                                    <p class="text-light-custom opacity-50">Lorem ipsum dolor sit amet consectetur,
-                                        adipisicing elit. Atque eaque, maxime eius repellendus saepe officiis vero,
-                                        assumenda optio beatae accusantium dolorem voluptatibus cupiditate consectetur
-                                        sint deleniti? Voluptatibus ipsum soluta veritatis.</p>
-                                </div>
-                                <div class="hero-cta">
-                                    <button class="navbar-cta">Hire Me !</button>
-                                </div>
-                            </div>
+            </div>
+        </div>
+    </section>
+    <section id="about">
+        <div class="container-fluid bg-dark-custom p-5">
+            <div class="container">
+                <div class="perk-section">
+                    <div class="text-data text-light">
+                        <h1 class="fw-bolder">
+                            <span class="d-block">We Shape</span> ThePerfect Solutions
+                        </h1>
+                        <p>
+                            A small river named Duden flows by their place and supplies it with the necessary
+                            regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your
+                            mouth.
+                        </p>
+                    </div>
+                    <div class="tile tile-1">
+                        <div class="icon d-flex justify-content-end px-3 py-3">
+                            <img src="./media/perk-icons/icon1.png" alt="">
                         </div>
-                        <div class="media">
-                            <img class="img-fluid" src="./media/girl.png" alt="">
+                        <div class=" ps-3 fs-4 title text-light fw-bolder">
+                            Digital <br> Product
+                        </div>
+                    </div>
+                    <div class="tile tile-2">
+                        <div class="icon d-flex justify-content-end px-3 py-3">
+                            <img src="./media/perk-icons/icon2.png" alt="">
+                        </div>
+                        <div class=" ps-3 fs-4 title text-light fw-bolder">
+                            Online <br> Marketing
+                        </div>
+                    </div>
+                    <div class="tile tile-3">
+                        <div class="icon d-flex justify-content-end px-3 py-3">
+                            <img src="./media/perk-icons/graphic-design.png" alt="">
+                        </div>
+                        <div class=" ps-3 fs-4 title text-light fw-bolder">
+                            Graphic <br> Design
+                        </div>
+                    </div>
+                    <div class="tile tile-4">
+                        <div class="icon d-flex justify-content-end px-3 py-3">
+                            <img src="./media/perk-icons/web-designing.png" alt="">
+                        </div>
+                        <div class=" ps-3 fs-4 title text-light fw-bolder">
+                           Application <br> Development
+                        </div>
+                    </div>
+                    <div class="tile tile-5">
+                        <div class="icon d-flex justify-content-end px-3 py-3">
+                            <img src="./media/perk-icons/programming.png" alt="">
+                        </div>
+                        <div class=" ps-3 fs-4 title text-light fw-bolder">
+                            Web <br> Development
+                        </div>
+                    </div>
+                    <div class="tile tile-6">
+                        <div class="icon d-flex justify-content-end px-3 py-3">
+                            <img src="./media/perk-icons/ux.png" alt="">
+                        </div>
+                        <div class=" ps-3 fs-4 title text-light fw-bolder">
+                            UX/UI <br> Designing
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <section id="about"></section>
     <section id="faq"></section>
     <section id="services"></section>
     <section id="portfolio"></section>

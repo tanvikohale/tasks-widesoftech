@@ -101,7 +101,7 @@
     grid-column-end: 3;
     grid-row-start: 1;
     grid-row-end: 2;
-    background: linear-gradient(110deg, rgba(0, 0, 0, 0) 50%, rgba(var(--accent3RGB), 1) 50%);
+    background: linear-gradient(110deg, rgba(0, 0, 0, 0) , rgba(var(--accent3RGB), 1));
 }
 
 /* perk  */

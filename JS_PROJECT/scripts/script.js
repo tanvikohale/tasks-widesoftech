@@ -1,4 +1,4 @@
-let tasks = []
+let tasks = JSON.parse(localStorage.getItem("data")) || []
 
 let add_notes_button = document.querySelector("#add-notes-button")
 
@@ -11,6 +11,8 @@ let taskForm = document.querySelector("#task-form")
 let isEdit = false
 
 let TaskEditIndex = null
+
+let searchBar = document.querySelector("#search-bar-field")
 
 let addNotesFormContainer = document.querySelector(".add-notes-form")
 
@@ -46,15 +48,23 @@ taskForm.addEventListener('submit', (event) => {
         event.target["title"].value = ""
         event.target["description"].value = ""
         closeButton.click()
-        displayTask()
+        displayTask(tasks)
+        SaveDataIntoLocalStorage(tasks)
     } catch (err) {
         console.log("please added task data before submitting ! : ", err)
     }
 })
 
-function displayTask() {
+function displayTask(arrayToBeDisplayed) {
+
+    if (arrayToBeDisplayed.length == 0) {
+        document.querySelector("#task-container-title").innerText = "No Data To Display !"
+    } else {
+        document.querySelector("#task-container-title").innerText = "Task Data !"
+    }
+
     document.querySelector('.tasks-container').innerHTML = ""
-    tasks.forEach((task, index) => {
+    arrayToBeDisplayed.forEach((task, index) => {
         let singleTask = document.createElement("div")
         singleTask.classList.value = "task border p-4"
         singleTask.innerHTML = `
@@ -73,7 +83,8 @@ function deleteTask(deleteIndex) {
     let confirmDelete = window.confirm(`do you really want to delete ${deleteIndex} element ?`)
     if (confirmDelete) {
         tasks = tasks.filter((task, index) => { return index != deleteIndex })
-        displayTask()
+        SaveDataIntoLocalStorage(tasks)
+        displayTask(tasks)
     } else {
         alert("delete cancelled !")
     }
@@ -92,3 +103,22 @@ function editTask(editIndex) {
     isEdit = true
     TaskEditIndex = editIndex
 }
+
+searchBar.addEventListener("change", (event) => {
+    console.log(event.target.value)
+    let searchString = event.target.value
+
+    let filteredTasksArray = tasks.filter((task, index) => {
+        if (task.title.includes(searchString)) {
+            return task
+        }
+    })
+
+    displayTask(filteredTasksArray)
+})
+
+function SaveDataIntoLocalStorage(data) {
+    localStorage.setItem("data", JSON.stringify(data))
+}
+
+displayTask(tasks)

@@ -37,8 +37,10 @@
     justify-content: center;
 }
 
-/* Popup overlay */
 .add-notes-pop-up {
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.5s ease;
     position: fixed;
     width: 100%;
     height: 100vh;
@@ -46,20 +48,13 @@
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
-    
-    /* hidden by default */
-    opacity: 0;
-    visibility: hidden;
-    transition: opacity 0.4s ease, visibility 0.4s ease;
 }
 
-/* Show when active */
 .add-notes-pop-up.active {
     opacity: 1;
     visibility: visible;
 }
 
-/* Popup form box */
 .add-notes-pop-up>.add-notes-form {
     z-index: 99;
     width: 500px;
@@ -68,15 +63,7 @@
     position: absolute;
     left: 50%;
     top: 50%;
-    transform: translate(-50%, -50%) scale(0.8);
-    border-radius: 10px;
-    padding: 1rem;
-    transition: transform 0.3s ease;
-}
-
-/* Zoom effect when active */
-.add-notes-pop-up.active .add-notes-form {
-    transform: translate(-50%, -50%) scale(1);
+    transform: translate(-50%, -50%);
 }
 
 .add-notes-form .content #task-form {
@@ -89,4 +76,17 @@
 .content #task-form .title,
 .content #task-form .description {
     border: none;
+}
+
+.tasks-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    gap: 2rem;
+}
+
+.task-object {
+    /* background-color: red; */
+    padding: 1rem;
+    border: 1px solid rgba(0,0,0,.1);
 }
